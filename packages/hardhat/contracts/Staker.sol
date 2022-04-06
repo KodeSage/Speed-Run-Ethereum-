@@ -57,7 +57,7 @@ contract Staker {
   }
     
     receive() external payable {
-        
+        stake();
     }
   // if the `threshold` was not met, allow everyone to call a `withdraw()` function
   function withdraw(address payable withdrawer) public deadlineReached stakeNotCompleted {
